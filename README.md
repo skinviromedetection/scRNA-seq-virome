@@ -1,9 +1,9 @@
 # scRNA-seq-virome
 
 ## Getting started
-This workflow is for scRNA-seq experiments run on the 10X Genomics Platform. The first step is the align output .fastq files using CellRanger (https://www.10xgenomics.com/support/software/cell-ranger/latest). Reference transcriptomes can be downloaded from 10X genomics (https://www.10xgenomics.com/support/software/cell-ranger/latest/release-notes/cr-reference-release-notes). CellRanger The version must be greater than CellRanger 7.0 such that the alignment output of CellRanger contains unmapped reads.
+This workflow is for scRNA-seq experiments run on the 10X Genomics Platform. The first step is the align output .fastq files using CellRanger (https://www.10xgenomics.com/support/software/cell-ranger/latest). Reference transcriptomes can be downloaded from 10X genomics (https://www.10xgenomics.com/support/software/cell-ranger/latest/release-notes/cr-reference-release-notes). CellRanger version must be greater than CellRanger 7.0 such that the alignment output of CellRanger contains unmapped reads.
 
-The other file needed for this workflow is a file of viral genomes of interest. For this work we have used a previously published viral genome database (Selitsky et al, 2020) containing 1893 vertebrate viral genomes, masked at repetitive locations as well as locations that align to the human genome, available at [https://github.com/dmarron/virdetect/tree/master/reference](https://github.com/dmarron/virdetect/tree/master/reference). 
+The other file needed for this workflow is a file of viral genomes of interest. For this work we have used a previously published viral genome database ([Selitsky et al, 2020](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6483-6)) containing 1893 vertebrate viral genomes, masked at repetitive locations as well as locations that align to the human genome, available at [https://github.com/dmarron/virdetect/tree/master/reference](https://github.com/dmarron/virdetect/tree/master/reference). 
 
 Finally this workflow requires blastn from the NCBI BLAST+ library of tools: [https://blast.ncbi.nlm.nih.gov/doc/blast-help/downloadblastdata.html](https://blast.ncbi.nlm.nih.gov/doc/blast-help/downloadblastdata.html)
 ## Align data to human genome
