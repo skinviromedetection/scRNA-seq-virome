@@ -17,7 +17,6 @@ The next step filters the output of CellRanger count (possorted_genome_bam.bam) 
 
  ## Prepare files for BLAST
  Next we prepare the unmapped reads file to be aligned to the database of viral genomes as BLAST only accepts fasta files:
- > sed -n '1~4s/^@/>/p;2~4p' <output_unmapped.fastq> | sed 's/\t//g' > <output.fasta>
->
+``` sed -n '1~4s/^@/>/p;2~4p' <output_unmapped.fastq> | sed 's/\t//g' > <output.fasta>```
 We also need to create a BLAST database from the viral genome database. To do this we use the makeblastdb tool from the NCBI BLAST+ library of tools: [https://blast.ncbi.nlm.nih.gov/doc/blast-help/downloadblastdata.html](https://blast.ncbi.nlm.nih.gov/doc/blast-help/downloadblastdata.html)
 > makeblastdb -in your_genome_file.fa -dbtype nucl -out db_name
